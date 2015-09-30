@@ -1,0 +1,265 @@
+<html>
+<head>
+
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="calc.css">
+
+</head>
+<body>
+
+
+	<fieldset>
+	<div class="container-fluid">
+
+		<div class="row">
+
+				<input id="painel" class="col-xs-12 control-label" type="number" value="0" style="text-align: right; height: 50px;">
+
+		</div>
+
+	</div>
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+				<input id="mc" class="btn btn-default col-xs-2  col-xs-offset-1" type="button" value="MC">
+
+				<input id="mr" class="btn btn-default col-xs-2" type="button" value="MR">
+
+				<input id="ms" class="btn btn-default col-xs-2" type="button" value="MS">
+
+				<input id="mmais" class="btn btn-default col-xs-2" type="button" value="M+">
+
+				<input id="mmenos" class="btn btn-default col-xs-2" type="button" value="M-">
+
+		</div>
+
+	</div>
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+				<input id="apagar" class="btn btn-default col-xs-2 col-xs-offset-1" type="button" value="←">
+
+				<input id="ce" class="btn btn-default col-xs-2" type="button" value="CE">
+
+				<input id="reset" class="btn btn-default col-xs-2" type="button" value="C">
+
+				<input id="maismenos" class="btn btn-default col-xs-2" type="button" value="+-">
+
+				<input id="raiz" class="btn btn-default col-xs-2" type="button" value="√">
+
+		</div>
+
+	</div>
+	
+	<div class="container-fluid">
+
+		<div class="row">
+
+				<input id="sete" class="btn btn-default col-xs-2 col-xs-offset-1" type="button" value="7">
+
+				<input id="oito" class="btn btn-default col-xs-2" type="button" value="8">
+
+				<input id="nove" class="btn btn-default col-xs-2" type="button" value="9">
+
+				<input id="div" class="btn btn-default col-xs-2" type="button" value="/">
+
+				<input id="porc" class="btn btn-default col-xs-2" type="button" value="%">
+
+		</div>
+
+	</div>
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+				<input id="quatro" class="btn btn-default col-xs-2 col-xs-offset-1" type="button" value="4">
+
+				<input id="cinco" class="btn btn-default col-xs-2" type="button" value="5">
+
+				<input id="seis" class="btn btn-default col-xs-2" type="button" value="6">
+
+				<input id="mlt" class="btn btn-default col-xs-2" type="button" value="*">
+
+				<input id="ele" class="btn btn-default col-xs-2" type="button" value="1/x">
+
+		</div>
+
+	</div>
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+				<input id="um" class="btn btn-default col-xs-2 col-xs-offset-1" type="button" value="1">
+
+				<input id="dois" class="btn btn-default col-xs-2" type="button" value="2">
+
+				<input id="tres" class="btn btn-default col-xs-2" type="button" value="3">
+
+				<input id="sub" class="btn btn-default col-xs-2" type="button" value="-">
+
+				<input id="igual" class="btn btn-default col-xs-2" type="button" value="=">
+
+		</div>
+
+	</div>
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+				<input id="zero" class="btn btn-default col-xs-4 col-xs-offset-1" type="button" value="0">
+
+				<input id="virg" class="btn btn-default col-xs-2" type="button" value=",">
+
+				<input id="adc" class="btn btn-default col-xs-2" type="button" value="+">
+
+				<button class="btn btn-default col-xs-2 btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					  Científica
+					</button>
+
+					<div class="collapse col-xs-12 control-label" id="collapseExample">
+					  <div class="well col-xs-12 control-label">
+					    
+					    <div class="container-fluid">
+
+							<div class="row">
+
+
+						    	<div class="radio-inline col-xs-3 col-xs-offset-2">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								    Graus
+								  </label>
+								</div>
+
+								<div class="radio-inline col-xs-3">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+								    Radianos
+								  </label>
+								</div>
+
+								<div class="radio-inline col-xs-3">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+								    Grados
+								  </label>
+								</div>
+
+					    	</div>
+
+						</div>
+
+					    <div class="container-fluid">
+
+							<div class="row">
+
+								<input id="quatro" class="btn btn-default col-xs-2 col-xs-offset-1" type="button" value=" " disabled="disabled">
+
+								<input id="cinco" class="btn btn-default col-xs-2" type="button" value="lnv">
+
+								<input id="seis" class="btn btn-default col-xs-2" type="button" value="ln">
+
+								<input id="mlt" class="btn btn-default col-xs-2" type="button" value="(">
+
+								<input id="ele" class="btn btn-default col-xs-2" type="button" value=")">
+
+							</div>
+
+						</div>
+
+						<div class="container-fluid">
+
+							<div class="row">
+
+								<input id="quatro" class="btn btn-default col-xs-2 col-xs-offset-1" type="button" value="lnt">
+
+								<input id="cinco" class="btn btn-default col-xs-2" type="button" value="sinh">
+
+								<input id="seis" class="btn btn-default col-xs-2" type="button" value="sin">
+
+								<input id="mlt" class="btn btn-default col-xs-2" type="button" value="x²">
+
+								<input id="ele" class="btn btn-default col-xs-2" type="button" value="n!">
+
+							</div>
+
+						</div>
+
+						<div class="container-fluid">
+
+							<div class="row">
+
+								<input id="quatro" class="btn btn-default col-xs-2 col-xs-offset-1" type="button" value="dms">
+
+								<input id="cinco" class="btn btn-default col-xs-2" type="button" value="cosh">
+
+								<input id="seis" class="btn btn-default col-xs-2" type="button" value="cos">
+
+								<input id="mlt" class="btn btn-default col-xs-2" type="button" value="X y">
+
+								<input id="ele" class="btn btn-default col-xs-2" type="button" value="y &radic; x">
+
+							</div>
+
+						</div>
+
+						<div class="container-fluid">
+
+							<div class="row">
+
+								<input id="quatro" class="btn btn-default col-xs-2 col-xs-offset-1" type="button" value="π">
+
+								<input id="cinco" class="btn btn-default col-xs-2" type="button" value="tanh">
+
+								<input id="seis" class="btn btn-default col-xs-2" type="button" value="tan">
+
+								<input id="mlt" class="btn btn-default col-xs-2" type="button" value="x³">
+
+								<input id="ele" class="btn btn-default col-xs-2" type="button" value="3 &radic; x">
+
+							</div>
+
+						</div>
+
+						<div class="container-fluid">
+
+							<div class="row">
+
+								<input id="quatro" class="btn btn-default col-xs-2 col-xs-offset-1" type="button" value="F-E">
+
+								<input id="cinco" class="btn btn-default col-xs-2" type="button" value="Exp">
+
+								<input id="seis" class="btn btn-default col-xs-2" type="button" value="Mod">
+
+								<input id="mlt" class="btn btn-default col-xs-2" type="button" value="log">
+
+								<input id="ele" class="btn btn-default col-xs-2" type="button" value="10 x">
+
+							</div>
+
+						</div>
+					  
+					  </div>
+					</div>
+
+		</div>
+
+	</div>
+	</fieldset>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script language="JavaScript" src="calc.js"> </script>
+
+</body>
+</html>
