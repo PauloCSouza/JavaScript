@@ -1,0 +1,33 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+body {
+    background-color: #cecece;
+    background-size: cover;
+}
+
+fieldset {
+    background-color: rgba(255,255,255,.8);
+    margin: 100px auto 100px auto;
+    padding: 10px;
+    width: 550px;
+    min-height:300px;
+}
+
+fieldset::before {
+    content: " CALCULADORA - JavaScript ";
+    font: 12pt Arial;
+    font-weight: bold;
+    color: white;
+    background-color: #273747;
+    padding: 5px;
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 550px;
+    text-align: center;
+}
