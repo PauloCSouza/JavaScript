@@ -324,9 +324,19 @@ function igualTotal(){ // Função para calcular a operação
 
 }
 
+/* ---------------------------- */
+/* ---- Funções Científica ---- */
+/* ---------------------------- */
+
+function calcPi(){ // Função Pi
+	
+	total = 3.141592653589793;
+	$("#painel").val(total);
+
+}
 
 /* ---------------------------- */
-/* ---- Funções Operadores ---- */
+/* ---- Funções dos Botões ---- */
 /* ---------------------------- */
 
 function result(operator){ // Função que recebe o ID e chama a função do operador selecionado
@@ -336,7 +346,6 @@ function result(operator){ // Função que recebe o ID e chama a função do ope
 
 			calcAdc();
 			operatorClicked = operator;
-			statusClicked = operator;
 
 		break;
 
@@ -344,7 +353,6 @@ function result(operator){ // Função que recebe o ID e chama a função do ope
 		
 			calcSub();
 			operatorClicked = operator;
-			statusClicked = operator;
 
 		break;
 
@@ -352,7 +360,6 @@ function result(operator){ // Função que recebe o ID e chama a função do ope
 
 			calcMult();
 			operatorClicked = operator;
-			statusClicked = operator;
 		
 		break;
 
@@ -360,7 +367,6 @@ function result(operator){ // Função que recebe o ID e chama a função do ope
 
 			calcDiv();
 			operatorClicked = operator;
-			statusClicked = operator;
 		
 		break;
 
@@ -452,7 +458,29 @@ function result(operator){ // Função que recebe o ID e chama a função do ope
 }
 
 $(".btn-oper").on("click", function(){ // Função para pegar o ID do operador selecionado
-	result(this.id)
+	result(this.id);
+});
+
+/* ---------------------------- */
+/* ---- Funções dos Botões ---- */
+/* ---------------------------- */
+
+function resultCient(operator){ // Função que recebe o ID e chama a função do operador selecionado (Científica)
+	
+	switch(operator){
+		
+		case 'pi': // Chama a função calcPi e exibe o valor
+
+			calcPi();
+			operatorClicked = operator;
+
+		break;
+					
+	}
+}
+
+$(".btn-cient").on("click", function(){ // Função para pegar o ID do operador selecionado (Científica)
+	resultCient(this.id);
 });
 
 /* ---------------------------- */

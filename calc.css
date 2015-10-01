@@ -4,13 +4,10 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-body {
-    background-color: #cecece;
-    background-size: cover;
-}
-
 fieldset {
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(176,196,222,.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    border-radius: 5px;
     margin: 100px auto 100px auto;
     padding: 10px;
     width: 550px;
@@ -18,11 +15,11 @@ fieldset {
 }
 
 fieldset::before {
-    content: " CALCULADORA - JavaScript ";
+    content: " CALCULADORA JS";
     font: 12pt Arial;
     font-weight: bold;
     color: white;
-    background-color: #273747;
+    background-color: #1E90FF;
     padding: 5px;
     display: block;
     position: relative;
@@ -30,4 +27,21 @@ fieldset::before {
     left: -10px;
     width: 550px;
     text-align: center;
+}
+
+div {
+    padding: 1px;
+}
+
+div.well {
+    background-color: rgba(169,169,169,.2);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+}
+
+input#painel {
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: arial;
+    background-color: rgba(220,220,220,.9);
 }
