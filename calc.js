@@ -1,7 +1,6 @@
 /* ---------------------------- */
 /* -------- Variaveis --------- */
 /* ---------------------------- */
-
 memoria =0;
 total = 0;
 oper = [];
@@ -40,7 +39,6 @@ $(".btn-number").on("click", function(){ // Função para pegar o valor dos bot�
 /* ---------------------------- */
 /* -- Funções da Calculadora -- */
 /* ---------------------------- */
-
 function memoryClear(){ // Função para limpar a memória
 
 	memoria = 0;
@@ -331,6 +329,7 @@ function igualTotal(){ // Função para calcular a operação
 function calcPi(){ // Função Pi
 	
 	total = 3.141592653589793;
+
 	$("#painel").val(total);
 
 }
