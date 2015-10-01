@@ -1,10 +1,11 @@
 /* ---------------------------- */
 /* -------- Variaveis --------- */
 /* ---------------------------- */
-memoria =0;
-total = 0;
-oper = [];
-operatorClicked = "";
+
+memoria =0; // Memoria da calculadora
+total = 0; // Total Global dos calculos
+oper = []; // Array para receber o input dos números
+operatorClicked = ""; // Variavel que recebe o ultimo operador
 
 /* ---------------------------- */
 /* --- Botões da Calculadora -- */
@@ -39,6 +40,7 @@ $(".btn-number").on("click", function(){ // Função para pegar o valor dos bot�
 /* ---------------------------- */
 /* -- Funções da Calculadora -- */
 /* ---------------------------- */
+
 function memoryClear(){ // Função para limpar a memória
 
 	memoria = 0;
@@ -49,24 +51,24 @@ function memoryClear(){ // Função para limpar a memória
 function memoryRecover(){ // Função para recuperar dado da memória
 
 	if(Number(arrayInput()) == 0 && total > 0){
-
+		
 		console.log("Add no Array")
 		oper.push(memoria);
 		$("#painel").val(memoria);
-
+	
 	} else if(Number(arrayInput()) > 0 && total == 0) {
-
+		
 		total = memoria;
 		$("#painel").val(memoria);
-
+	
 	} else if(Number(arrayInput()) == 0 && total == 0){
-
+		
 		console.log("Memoria salva no total");
 		total = memoria;
 		$("#painel").val(memoria);
-
+	
 	} else if(Number(arrayInput()) > 0 && total > 0){
-
+		
 		console.log("Efetuando a operação...");
 
 	} else {
@@ -339,6 +341,7 @@ function calcPi(){ // Função Pi
 /* ---------------------------- */
 
 function result(operator){ // Função que recebe o ID e chama a função do operador selecionado
+	
 	switch(operator){
 		
 		case 'adc': // Chama a função da calculadora para efetuar uma adição

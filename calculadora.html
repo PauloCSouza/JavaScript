@@ -17,7 +17,7 @@
 
 			<div class="row">
 
-					<input id="painel" class="col-xs-12 control-label" type="number" value="0" style="text-align: right; height: 50px;">
+					<input id="painel" class="col-xs-12 control-label" type="number" value="0" style="text-align: right; height: 50px;" disabled>
 
 			</div>
 
@@ -58,7 +58,7 @@
 					<input id="reset" class="btn btn-default col-xs-2 btn-oper" type="button" value="C" data-toggle="tooltip" data-placement="top" title="Resetar Calculadora">
 
 					<button id="maismenos" class="btn btn-default col-xs-2 btn-oper" type="button" value="+-" data-toggle="tooltip" data-placement="top" title="Alterar o resultado para negativo ou positivo"> 
-						<sup>+</sup>-<sub>-</sub>
+						<sup>+</sup> <sub>-</sub>
 					</button>
 
 					<input id="raiz" class="btn btn-default col-xs-2 btn-oper" type="button" value="√" data-toggle="tooltip" data-placement="top" title="Calcular Raiz Quadrada">
@@ -171,15 +171,12 @@
 
 						</div>
 
-					    <div class="container-fluid"> <!-- Disabled, Inv, Ln, (, ) -->
+					    <div class="container-fluid"> <!-- Ln, (, ) -->
 
 							<div class="row">
 
-								<input id="disabled" class="btn btn-default col-xs-2 col-xs-offset-1 btn-cient" type="button" value=" " disabled="disabled" data-toggle="tooltip" data-placement="top" title="Disabled">
 
-								<input id="inv" class="btn btn-default col-xs-2 btn-cient" type="button" value="Inv" data-toggle="tooltip" data-placement="top" title="Inverso" >
-
-								<input id="ln" class="btn btn-default col-xs-2 btn-cient" type="button" value="ln" data-toggle="tooltip" data-placement="top" title="Logaritmo Natural">
+								<input id="ln" class="btn btn-default col-xs-4 col-xs-offset-2 btn-cient" type="button" value="ln" data-toggle="tooltip" data-placement="top" title="Logaritmo Natural">
 
 								<input id="parentesee" class="btn btn-default col-xs-2 btn-cient" type="button" value="(" data-toggle="tooltip" data-placement="top" title="Parêntese de abertura">
 
@@ -195,13 +192,13 @@
 
 								<input id="int" class="btn btn-default col-xs-2 col-xs-offset-1 btn-cient" type="button" value="Int" data-toggle="tooltip" data-placement="top" title="Inteiro">
 
-								<input id="sinh" class="btn btn-default col-xs-2 btn-cient" type="button" value="sinh" >
+								<input id="sinh" class="btn btn-default col-xs-2 btn-cient" type="button" value="sinh">
 
-								<input id="sin" class="btn btn-default col-xs-2 btn-cient" type="button" value="sin">
+								<input id="sin" class="btn btn-default col-xs-2 btn-cient" type="button" value="sin" data-placement="top" title="Seno">
 
-								<input id="x2" class="btn btn-default col-xs-2 btn-cient" type="button" value="x²">
+								<input id="x2" class="btn btn-default col-xs-2 btn-cient" type="button" value="x²" data-placement="top" title="Elevado ao quadrado">
 
-								<input id="nn" class="btn btn-default col-xs-2 btn-cient" type="button" value="n!">
+								<input id="nn" class="btn btn-default col-xs-2 btn-cient" type="button" value="n!" data-placement="top" title="Fatorial">
 
 							</div>
 
@@ -215,13 +212,13 @@
 
 								<input id="consh" class="btn btn-default col-xs-2 btn-cient" type="button" value="cosh">
 
-								<input id="cos" class="btn btn-default col-xs-2 btn-cient" type="button" value="cos">
+								<input id="cos" class="btn btn-default col-xs-2 btn-cient" type="button" value="cos" data-placement="top" title="Consseno">
 
-								<button id="xy" class="btn btn-default col-xs-2 btn-cient" type="button" value="X y">
+								<button id="xy" class="btn btn-default col-xs-2 btn-cient" type="button" value="X y" data-placement="top" title="Exponencial">
 									x<sup>Y</sup>
 								</button>
 
-								<button id="yvx" class="btn btn-default col-xs-2 btn-cient" type="button" value="y &radic; x">
+								<button id="yvx" class="btn btn-default col-xs-2 btn-cient" type="button" value="y &radic; x" data-placement="top" title="Raiz enésima">
 									<sup>Y</sup>&radic;x
 								</button>
 
@@ -233,15 +230,15 @@
 
 							<div class="row">
 
-								<input id="pi" class="btn btn-default col-xs-2 col-xs-offset-1 btn-cient" type="button" value="π">
+								<input id="pi" class="btn btn-default col-xs-2 col-xs-offset-1 btn-cient" type="button" value="π" data-placement="top" title="PI">
 
 								<input id="tanh" class="btn btn-default col-xs-2 btn-cient" type="button" value="tanh">
 
-								<input id="tan" class="btn btn-default col-xs-2 btn-cient" type="button" value="tan">
+								<input id="tan" class="btn btn-default col-xs-2 btn-cient" type="button" value="tan" data-placement="top" title="Tangente">
 
-								<input id="x3" class="btn btn-default col-xs-2 btn-cient" type="button" value="x³">
+								<input id="x3" class="btn btn-default col-xs-2 btn-cient" type="button" value="x³" data-placement="top" title="Elevado ao cubo">
 
-								<button id="3vx" class="btn btn-default col-xs-2 btn-cient" type="button" value="3 &radic; x">
+								<button id="3vx" class="btn btn-default col-xs-2 btn-cient" type="button" value="3 &radic; x" data-placement="top" title="Raiz cúbica">
 									<sup>3</sup>&radic;x
 								</button>
 
@@ -257,9 +254,9 @@
 
 								<input id="exp" class="btn btn-default col-xs-2 btn-cient" type="button" value="Exp">
 
-								<input id="mod" class="btn btn-default col-xs-2 btn-cient" type="button" value="Mod">
+								<input id="mod" class="btn btn-default col-xs-2 btn-cient" type="button" value="Mod" data-placement="top" title="Resto de divisão">
 
-								<input id="log" class="btn btn-default col-xs-2 btn-cient" type="button" value="log">
+								<input id="log" class="btn btn-default col-xs-2 btn-cient" type="button" value="log" data-placement="top" title="Logaritmo Comum">
 
 								<button id="10x" class="btn btn-default col-xs-2 btn-cient" type="button" value="10 x">
 									10<sup>X</sup>
