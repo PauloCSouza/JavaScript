@@ -24,7 +24,7 @@ Layout utilizando HTML5, Bootstrap e CSS;
 
 ---
 
-## Calculadora:
+## Screenshot:
 
 [![solarized dualmode](http://i58.tinypic.com/zm1g0h.png)](#features)
 
