@@ -1,3 +1,8 @@
+/* ---------------------------------- */
+/*  Desenvolvimento Game JavaScript   */
+/* ---------------------------------- */
+/* ------- Date: 2015.10.01 --------- */
+/* ---------------------------------- */
 
 var game = new Phaser.Game(1024, 900, Phaser.Game, '', {preload: preload, create: create, update: update});
 
